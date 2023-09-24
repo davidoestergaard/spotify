@@ -14,13 +14,20 @@
 .scroll-section{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
     max-height: 300px; /* Definer den maksimale højde, hvor scroll vil vises */
     overflow-y: auto; /* Tilføj en lodret scrollbar, hvis indholdet er større end max-height */
     border: 1px solid #ccc; /* Tilføj en kant, hvis ønsket */
     padding: 10px; /* Tilføj indvendig plads efter behov */
+    background-color: rgb(38, 38, 38);
 }
 body{
     margin: 0;
     padding: 0;
+}
+
+main{
+    width: 100%;
+    height: 100%;
 }
