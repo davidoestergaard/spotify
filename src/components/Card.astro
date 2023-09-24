@@ -1,0 +1,47 @@
+---
+const title = Astro.props.title;
+const text = Astro.props.text;
+const image = Astro.props.image;
+---
+
+<li>
+  <article>
+    <img src={image} alt="playlistephoto" />
+    <h2>{title}</h2>
+    <p>{text}</p>
+  </article>
+</li>
+
+<style>
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  li {
+    list-style: none;
+  }
+article:hover{
+background-color: gray;
+scale: 1.10;
+}
+  article {
+    gap: 1px;
+    width: 150px;
+    height: 270px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: rgb(35, 34, 34);
+    background-color: rgb(39, 37, 37);
+  }
+  h2 {
+    color: antiquewhite;
+  }
+
+  p {
+    color: antiquewhite;
+    max-height: fit-content;
+  }
+
+</style>

@@ -1,0 +1,84 @@
+---
+import Card from "../components/Card.astro";
+import Playlisteboks from "../components/Playlisteboks.astro";
+import Topbar from "../components/Topbar.astro";
+import Navboks from "../components/Navboks.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <link rel="stylesheet" href="../public/style.css" />
+  </head>
+  <body>
+    <div class="bodygrid">
+      <Navboks />
+      <main>
+        <Topbar />
+        <Playlisteboks overskrift="Spotify-Playlister">
+          <Card
+            image="https://picsum.photos/id/68/150/150"
+            title="Today's Top Hits"
+            text="Blablabala 50"
+          />
+
+          <Card
+            image="https://picsum.photos/id/68/150/150"
+            title="All out 2010s"
+            text="Blablabala 50"
+          />
+          <Card
+            image="https://picsum.photos/id/68/150/150"
+            title="Rock Classics"
+            text="Blablabala 50"
+          />
+          <Card
+            image="https://picsum.photos/id/68/150/150"
+            title="RapCaviar"
+            text="Blablabala 50"
+          />
+          <Card
+            image="https://picsum.photos/id/68/150/150"
+            title="Chill Hits"
+            text="Blablabala 50"
+          />
+        </Playlisteboks>
+
+        <Playlisteboks overskrift="Fokus">
+          <Card
+            image="https://picsum.photos/id/68/150/150"
+            title="Peaceful Piano"
+            text="Blablabala 50"
+          />
+
+          <Card
+            image="https://picsum.photos/id/68/150/150"
+            title="Deep Focus"
+            text="Blablabala 50"
+          />
+          <Card
+            image="https://picsum.photos/id/68/150/150"
+            title="Instrumental Study"
+            text="Blablabala 50"
+          />
+          <Card
+            image="https://picsum.photos/id/68/150/150"
+            title="Workday Lounge"
+            text="Blablabala 50"
+          />
+          <Card
+            image="https://picsum.photos/id/68/150/150"
+            title="Beats to think to"
+            text="Blablabala 50"
+          />
+        </Playlisteboks>
+      </main>
+    </div>
+    <Footer />
+  </body>
+</html>

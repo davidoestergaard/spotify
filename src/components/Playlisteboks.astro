@@ -1,0 +1,37 @@
+---
+const overskrift = Astro.props.overskrift;
+---
+
+<section>
+  <header>
+    <h2>
+      <a href="#0">{overskrift}</a>
+    </h2>
+  </header>
+  <ul class="grid-container">
+    <slot />
+  </ul>
+</section>
+
+<style>
+  section {
+    background-color: rgb(40, 39, 39);
+    padding: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  h2 a {
+    color: antiquewhite;
+    padding: 10px;
+    margin: 0;
+  }
+</style>

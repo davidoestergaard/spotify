@@ -1,0 +1,26 @@
+.bodygrid{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 2;
+}
+
+/*main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
+}*/
+
+.scroll-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
+    max-height: 300px; /* Definer den maksimale højde, hvor scroll vil vises */
+    overflow-y: auto; /* Tilføj en lodret scrollbar, hvis indholdet er større end max-height */
+    border: 1px solid #ccc; /* Tilføj en kant, hvis ønsket */
+    padding: 10px; /* Tilføj indvendig plads efter behov */
+}
+body{
+    margin: 0;
+    padding: 0;
+}
